@@ -26,7 +26,7 @@
       "boot_wait": "10s",
       "disk_size": 32768,
       "guest_os_type": "Debian_64",
-      "headless": true,
+      "headless": false,
       "http_directory": "http",
       "iso_checksum": "{{user `iso_checksum`}}",
       "iso_checksum_type": "sha512",
@@ -40,8 +40,8 @@
       "virtualbox_version_file": ".vbox_version",
       "vm_name": "debian-{{user `debian_version`}}-amd64",
       "vboxmanage": [
-        [ "modifyvm", "{{.Name}}", "--memory", "512" ],
-        [ "modifyvm", "{{.Name}}", "--cpus", "1" ]
+        [ "modifyvm", "{{.Name}}", "--memory", "1024" ],
+        [ "modifyvm", "{{.Name}}", "--cpus", "2" ]
       ]
     }
   ],
@@ -64,7 +64,6 @@
         "scripts/jessie/sudoers.sh",
         "scripts/jessie/vagrant.sh",
         "scripts/jessie/puppet.sh",
-        "scripts/jessie/chef.sh",
         "scripts/jessie/vbaddguest.sh",
         "scripts/jessie/cleanup.sh"
       ],

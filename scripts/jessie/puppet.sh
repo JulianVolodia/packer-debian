@@ -9,4 +9,4 @@ if [ $(facter lsbdistcodename) = 'jessie' ] ; then
 fi
 
 # Install puppet
-apt-get -y install puppet facter
+apt-get -y install puppet
