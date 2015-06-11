@@ -58,15 +58,15 @@
       "type": "shell",
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S bash '{{.Path}}'",
       "scripts": [
-        "scripts/update.sh",
-        "scripts/sshd.sh",
-        "scripts/networking.sh",
-        "scripts/sudoers.sh",
-        "scripts/vagrant.sh",
-        "scripts/puppet.sh",
-        "scripts/chef.sh",
-        "scripts/vbaddguest.sh",
-        "scripts/cleanup.sh"
+        "scripts/jessie/update.sh",
+        "scripts/jessie/sshd.sh",
+        "scripts/jessie/networking.sh",
+        "scripts/jessie/sudoers.sh",
+        "scripts/jessie/vagrant.sh",
+        "scripts/jessie/puppet.sh",
+        "scripts/jessie/chef.sh",
+        "scripts/jessie/vbaddguest.sh",
+        "scripts/jessie/cleanup.sh"
       ],
       "only": ["virtualbox-iso"]
     }

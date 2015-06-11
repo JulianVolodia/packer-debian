@@ -57,16 +57,16 @@
       "type": "shell",
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S bash '{{.Path}}'",
       "scripts": [
-        "scripts/update.sh",
-        "scripts/sshd.sh",
-        "scripts/sudoers.sh",
-        "scripts/vagrant.sh",
-        "scripts/puppet.sh",
-        "scripts/ansible.sh",
-        "scripts/chef.sh",
-        "scripts/networking.sh",
-        "scripts/vbaddguest.sh",
-        "scripts/cleanup.sh"
+        "scripts/wheezy/update.sh",
+        "scripts/wheezy/sshd.sh",
+        "scripts/wheezy/sudoers.sh",
+        "scripts/wheezy/vagrant.sh",
+        "scripts/wheezy/puppet.sh",
+        "scripts/wheezy/ansible.sh",
+        "scripts/wheezy/chef.sh",
+        "scripts/wheezy/networking.sh",
+        "scripts/wheezy/vbaddguest.sh",
+        "scripts/wheezy/cleanup.sh"
       ]
     }
   ]
