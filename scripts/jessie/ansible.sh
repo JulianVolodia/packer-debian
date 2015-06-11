@@ -3,9 +3,9 @@
 # Ansible prequesites
 apt-get -y install python ruby ruby-json facter ohai
 
-# Install backports for wheezy
-if [ $(facter lsbdistcodename) = 'wheezy' ] ; then
-    echo "deb http://http.debian.net/debian wheezy-backports main" > /etc/apt/sources.list.d/backports.list
+# Install backports for jessie
+if [ $(facter lsbdistcodename) = 'jessie' ] ; then
+    echo "deb http://http.debian.net/debian jessie-backports main" > /etc/apt/sources.list.d/backports.list
     apt-get update
 fi
 
