@@ -9,7 +9,7 @@ apt-get -y clean
 
 # Remove history file
 unset HISTFILE
-rm ~/.bash_history /home/vagrant/.bash_history
+rm ~/.bash_history /home/vagrant/.bash_history | true
 
 # sync data to disk (fix packer)
 sync
